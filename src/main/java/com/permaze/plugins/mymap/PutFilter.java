@@ -9,10 +9,10 @@ import java.util.List;
 import java.util.Map;
 
 public class PutFilter {
-    private static Map<String, String> map;
+    private static Map<Object, Object> map;
 
     public static void setRules(List<FilterRule> rules) {
-        map = new HashMap<String, String>();
+        map = new HashMap<>();
 
         for (FilterRule rule : rules) {
             if (rule.getType() == RuleType.EQUAL) {
@@ -27,11 +27,11 @@ public class PutFilter {
 
     }
 
-    public static String testPut(String key, String value) {
+    public static Object testPut(Object key, Object value) {
         if (null == key) {
             return value;
         } else {
-            return map.getOrDefault(key, value);
+            return map.containsKey(key) ? map.get(key) : value;
         }
     }
 }

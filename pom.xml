@@ -10,7 +10,6 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <basedir>C:\Users\PMJ\Desktop\mymap</basedir>
     </properties>
 
     <build>
@@ -49,6 +48,7 @@
                         </manifest>
                         <manifestEntries>
                             <Built-By>PerMaze</Built-By>
+                            <Created-By>PerMaze</Created-By>
                             <JANF-Plugin-Entry>com.permaze.plugins.mymap.MyPluginEntry</JANF-Plugin-Entry>
                         </manifestEntries>
                     </archive>
