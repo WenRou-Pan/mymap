@@ -10,7 +10,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <basedir>C:\Users\PMJ\Desktop\ja-netfilter-sample-plugin</basedir>
+        <basedir>C:\Users\PMJ\Desktop\mymap</basedir>
     </properties>
 
     <build>
